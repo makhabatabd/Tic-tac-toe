@@ -3,6 +3,7 @@ import "./TicTacToe.css";
 
 const TicTacToe = () => {
   const [turn, setTurn] = useState("x");
+  console.log(turn);
   const [cells, setCells] = useState(Array(9).fill(""));
   console.log(cells);
   const [winner, setWinner] = useState();
@@ -75,6 +76,7 @@ const TicTacToe = () => {
 
   const reload = () => {
     setWinner(null);
+    setTurn("x");
     setCells(Array(9).fill(""));
   };
 
