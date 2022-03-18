@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 60px;
+  color: black;
+}
+
+.turn {
+  font-size: 28px;
+  color: red;
+  margin: 10px 0 20px 0;
+}
+
+table td {
+  border: 1px solid grey;
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border: 6px solid rgb(13, 13, 105);
+}
+
+.reload {
+  background-color: green;
+  outline: none;
+  border-radius: 7px;
+  font-size: 20px;
+}
+
+.again {
+  background-color: red;
+  outline: none;
+  border-radius: 7px;
+  font-size: 20px;
+}
