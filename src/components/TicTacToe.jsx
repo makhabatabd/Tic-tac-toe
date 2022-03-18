@@ -6,7 +6,6 @@ const TicTacToe = () => {
   const [cells, setCells] = useState(Array(9).fill(""));
   console.log(cells);
   const [winner, setWinner] = useState();
-  const [draw, setDraw] = useState(false);
 
   const checkForWinner = (squares) => {
     let combos = {
@@ -40,6 +39,9 @@ const TicTacToe = () => {
           setWinner(squares[pattern[0]]);
         }
       });
+    }
+    if (squares.every((item) => item != "")) {
+      alert("ничья");
     }
   };
   const handleClick = (num) => {
